@@ -47,8 +47,6 @@ header {
   padding-bottom: 112px;
 }
 
-/* SERVICES */
-
 h2 {
   text-align: center;
 }
@@ -140,8 +138,6 @@ h3 {
   background-repeat: no-repeat;
 }
 
-/* OUR TEAM */
-
 .solution {
   text-align: center;
   color: #999999;
@@ -210,6 +206,10 @@ h3 {
 .photo:hover .overlay {
   visibility: visible;
   opacity: 1;
+  box-shadow: 10px 10px #95e1d3;
+  transform: translate(-10px, -10px);
+  transition-timing-function: linear;
+  transition-duration: 200ms;
 }
 
 .team__list {
@@ -219,4 +219,80 @@ h3 {
 
 .social__icon-item-link:hover {
   background-color: #95e1d3;
+}
+
+.team__name {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.team__position {
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  font-style: italic;
+}
+
+.photo__item {
+  margin-bottom: 32px;
+}
+
+.team__section {
+  padding-bottom: 82px;
+}
+
+.developer {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.developer__link {
+  color: #f38181;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit__menu {
+  display: flex;
+}
+
+.footer__section {
+  padding-bottom: 12px;
+}
+
+.input__area {
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+  padding: 14px;
+}
+
+.input__area::placeholder {
+  font-family: "Roboto" sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #cccccc;
+}
+
+.submit__button {
+  color: #ffffff;
+  background-color: #95e1d3;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-style: none;
+  width: 150px;
+  height: 40px;
 }
