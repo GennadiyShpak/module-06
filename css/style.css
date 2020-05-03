@@ -241,6 +241,7 @@ h3 {
   opacity: 1;
   box-shadow: 10px 10px #95e1d3;
   transform: translate(-10px, -10px);
+  transition-duration: 200ms;
 }
 
 .team__list {
