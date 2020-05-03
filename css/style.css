@@ -38,6 +38,10 @@ button {
   justify-content: space-between;
 }
 
+.nav__menu-item {
+  position: relative;
+}
+
 .nav__menu-item-link {
   color: #95e1d3;
   font-size: 14px;
@@ -45,10 +49,26 @@ button {
   text-transform: uppercase;
 }
 
+.nav__menu-item-link::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #f38181;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: width 200ms linear;
+}
+
+.nav__menu-item-link:hover::after {
+  color: #f38181;
+  width: 100%;
+}
+
 .nav__menu-item-link:hover {
   color: #f38181;
-  padding-bottom: 12px;
-  border-bottom: 3px solid #f38181;
 }
 
 header {
@@ -84,7 +104,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.second__line-header:after {
+.second__line-header::after {
   display: block;
   content: "";
   width: 60px;
@@ -169,6 +189,9 @@ h3 {
   );
   opacity: 0;
   visibility: hidden;
+  transition-property: all;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
 }
 
 .social__icon-item-link {
@@ -216,8 +239,6 @@ h3 {
   opacity: 1;
   box-shadow: 10px 10px #95e1d3;
   transform: translate(-10px, -10px);
-  transition-timing-function: linear;
-  transition-duration: 200ms;
 }
 
 .team__list {
