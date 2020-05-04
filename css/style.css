@@ -190,10 +190,9 @@ h3 {
   );
   opacity: 0;
   visibility: hidden;
-  transition-property: all;
+  transition-property: transform;
   transition-timing-function: linear;
   transition-duration: 200ms;
-  transform: translate(-10px, -10px);
 }
 
 .social__icon-item-link {
@@ -239,9 +238,16 @@ h3 {
 .photo:hover .overlay {
   visibility: visible;
   opacity: 1;
-  box-shadow: 10px 10px #95e1d3;
-  transform: translate(-10px, -10px);
+}
+
+.social__list {
+  transition-property: transform;
   transition-duration: 200ms;
+}
+
+.social__list:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px #95e1d3;
 }
 
 .team__list {
@@ -272,6 +278,7 @@ h3 {
 
 .photo__item {
   margin-bottom: 32px;
+  transition-property: transform;
 }
 
 .team__section {
